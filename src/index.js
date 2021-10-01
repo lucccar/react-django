@@ -7,6 +7,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SignUp from './components/Register';
+import SignIn from './components/Login';
 
 const routing = <Router>
     <React.StrictMode>
@@ -14,6 +15,7 @@ const routing = <Router>
         <Switch>
             <Route exact path="/" component={App} /> 
             <Route exact path="/register" component={SignUp} /> 
+            <Route exact path="/login" component={SignIn} /> 
         </Switch>
 
         <Footer />
